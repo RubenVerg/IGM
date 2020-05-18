@@ -21,7 +21,7 @@ u {
   font-weight  : $headings-font-weight;
   line-height  : $headings-line-height;
   color        : $headings-color;
-  @include font-size($h2-font-size);
+  @include font-size($h4-font-size);
 }
 
 q {
