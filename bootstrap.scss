@@ -1,0 +1,41 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+b {
+  font-weight: $font-weight-bolder;
+}
+
+i {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+t {
+  margin-top   : 0;
+  margin-bottom: $headings-margin-bottom;
+  font-family  : $headings-font-family;
+  font-weight  : $headings-font-weight;
+  line-height  : $headings-line-height;
+  color        : $headings-color;
+  @include font-size($h1-font-size);
+}
+
+q {
+  font-style: italic;
+  color     : $text-muted;
+}
+
+.thing {
+  margin     : 0; // 1
+  font-family: $font-family-base;
+  @include font-size($font-size-base);
+  font-weight     : $font-weight-base;
+  line-height     : $line-height-base;
+  color           : $body-color;
+  text-align      : left; // 3
+  background-color: $body-bg; // 2
+}
