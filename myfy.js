@@ -1,3 +1,3 @@
 const fs = require('fs');
 
-fs.writeFileSync('my.txt', fs.readFileSync('my.css'))
+fs.writeFileSync('light.txt', fs.readFileSync('light.css'))
