@@ -14,7 +14,7 @@ u {
   text-decoration: underline;
 }
 
-t {
+.title {
   margin-top   : 0;
   margin-bottom: $headings-margin-bottom;
   font-family  : $headings-font-family;
@@ -29,13 +29,53 @@ q {
   color     : $text-muted;
 }
 
-.thing {
-  margin     : 0; // 1
+#game {
+  margin     : 0;
   font-family: $font-family-base;
   @include font-size($font-size-base);
   font-weight     : $font-weight-base;
   line-height     : $line-height-base;
   color           : $body-color;
-  text-align      : left; // 3
-  background-color: $body-bg; // 2
+  text-align      : left;
+  background-color: $body-bg;
+}
+
+.box {
+  position        : relative;
+  display         : flex;
+  flex-direction  : column;
+  min-width       : 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  height          : $card-height;
+  word-wrap       : break-word;
+  background-color: $card-bg;
+  background-clip : border-box;
+  border          : $card-border-width solid $card-border-color;
+  @include border-radius($card-border-radius);
+  flex      : 1 1 auto;
+  min-height: 1px;
+  padding   : $card-spacer-x;
+  color     : $card-color;
+}
+
+.box-header {
+  padding         : $card-spacer-y $card-spacer-x;
+  margin-bottom   : 0; // Removes the default margin-bottom of <hN>
+  color           : $card-cap-color;
+  background-color: $card-cap-bg;
+  border-bottom   : $card-border-width solid $card-border-color;
+
+  &:first-child {
+    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+  }
+}
+
+.box-footer {
+  padding         : $card-spacer-y $card-spacer-x;
+  color           : $card-cap-color;
+  background-color: $card-cap-bg;
+  border-top      : $card-border-width solid $card-border-color;
+
+  &:last-child {
+    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+  }
 }
