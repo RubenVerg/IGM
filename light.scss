@@ -7,6 +7,7 @@
   @include font-size(12px);
   color      : $body-color;
   text-shadow: none;
+  font-family: $font-family-base;
 }
 
 .box {
@@ -126,7 +127,7 @@
 
 .thing-costs {
   font-weight: bold;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 0px rgba($black, 0.5);
 }
 
 .cost.hasEnough {
@@ -162,7 +163,7 @@
 
 .fullWidth,
 .fullWidth:hover {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba($black, 0.75);
   box-shadow: none;
   color     : #fff;
 }
@@ -171,7 +172,7 @@
 .fullWidth:after {
   content   : '';
   height    : 1px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba($white, 0.75);
   position  : absolute;
   left      : 0px;
   right     : 0px;
