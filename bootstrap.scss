@@ -49,8 +49,6 @@ q {
   word-wrap       : break-word;
   background-color: $card-bg;
   background-clip : border-box;
-  // border          : $card-border-width solid $card-border-color;
-  @include border-radius($card-border-radius);
   flex      : 1 1 auto;
   min-height: 1px;
   padding   : $card-spacer-x;
@@ -62,20 +60,26 @@ q {
   margin-bottom   : 0; // Removes the default margin-bottom of <hN>
   color           : $card-cap-color;
   background-color: $card-cap-bg;
-  border-bottom   : $card-border-width solid $card-border-color;
-
-  &:first-child {
-    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
-  }
 }
 
 .box-footer {
   padding         : $card-spacer-y $card-spacer-x;
   color           : $card-cap-color;
   background-color: $card-cap-bg;
-  border-top      : $card-border-width solid $card-border-color;
+}
 
-  &:last-child {
-    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
-  }
+.cost.hasEnough {
+  color: $success;
+}
+
+.cost.notEnough {
+  color: $danger;
+}
+
+.thing:active {
+  opacity: 0.5;
+}
+
+.owned {
+  opacity: 0.25;
 }
