@@ -33,5 +33,3 @@ q {
   text-align: left;
   background-color: #fff;
 }
-
-/*# sourceMappingURL=my.css.map */
