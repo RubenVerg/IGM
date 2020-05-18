@@ -21,7 +21,7 @@ u {
   font-weight  : $headings-font-weight;
   line-height  : $headings-line-height;
   color        : $headings-color;
-  @include font-size($h1-font-size);
+  @include font-size($h2-font-size);
 }
 
 q {
@@ -49,7 +49,7 @@ q {
   word-wrap       : break-word;
   background-color: $card-bg;
   background-clip : border-box;
-  border          : $card-border-width solid $card-border-color;
+  // border          : $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
   flex      : 1 1 auto;
   min-height: 1px;

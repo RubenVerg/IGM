@@ -15,7 +15,7 @@ u {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 q {
@@ -42,7 +42,6 @@ q {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   flex: 1 1 auto;
   min-height: 1px;
@@ -67,3 +66,5 @@ q {
 .box-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
 }
+
+/*# sourceMappingURL=my.css.map */
