@@ -217,6 +217,9 @@ q {
 .box {
   background-color: #fff;
 }
+.box#box-buttons {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .box#box-main .box-things {
   background-color: rgba(255, 0, 0, 0.25);
 }
