@@ -1,23 +1,27 @@
-$box-bg            : rgba($light, .25) !default;
-$box-bg-main       : $box-bg !default;
-$box-bg-resources  : rgba($dark, .1) !default;
-$shadow-color      : $dark !default;
-$shadow-owned-alpha: .25 !default;
-$shadow-owned-pos  : 0px 0px 0px 2px !default;
-$shadow-costs-alpha: .5 !default;
-$shadow-costs-pos  : 1px 1px 0px !default;
-$shadow-owned      : $shadow-owned-pos rgba($shadow-color, $shadow-owned-alpha) inset !default;
-$shadow-costs      : $shadow-costs-pos rgba($shadow-color, $shadow-costs-alpha) !default;
-$white-col         : $light !default;
-$black-col         : $dark !default;
+$igm-back              : $light !default;
+$igm-fore              : $dark !default;
+$igm-box-bg-alpha      : .25 !default;
+$igm-box-bg-col        : $igm-back !default;
+$igm-box-bg            : rgba($igm-box-bg-col, $igm-box-bg-alpha) !default;
+$igm-box-bg-main-alpha : $igm-box-bg-alpha !default;
+$igm-box-bg-main-col   : $igm-box-bg-col !default;
+$img-box-bg-main       : rgba($igm-box-bg-main-col, $igm-box-bg-main-alpha) !default;
+$igm-box-bg-resources  : rgba($igm-fore, .1) !default;
+$igm-shadow-color      : $igm-fore !default;
+$igm-shadow-owned-alpha: .25 !default;
+$igm-shadow-owned-pos  : 0px 0px 0px 2px !default;
+$igm-shadow-costs-alpha: .5 !default;
+$igm-shadow-costs-pos  : 1px 1px 0px !default;
+$igm-shadow-owned      : $igm-shadow-owned-pos rgba($igm-shadow-color, $igm-shadow-owned-alpha) inset !default;
+$igm-shadow-costs      : $igm-shadow-costs-pos rgba($igm-shadow-color, $igm-shadow-costs-alpha) !default;
 
 :root {
   @include font-size(12px);
 }
 
 #game {
-  background : $body-bg;
-  color      : $body-color;
+  background : $igm-back;
+  color      : $igm-fore;
   text-shadow: none;
   font-family: $font-family-base;
 }
@@ -26,13 +30,13 @@ $black-col         : $dark !default;
   text-align      : center;
   padding         : 0px;
   box-shadow      : none;
-  background-color: $box-bg;
+  background-color: $igm-box-bg;
 
   &#box-main {
-    background-color: $box-bg-main;
+    background-color: $img-box-bg-main;
 
     .box-things {
-      background-color: $box-bg-resources;
+      background-color: $igm-box-bg-resources;
     }
   }
 }
@@ -48,7 +52,7 @@ $black-col         : $dark !default;
 }
 
 .thing:hover {
-  background: rgba($black-col, 0.5)
+  background: rgba($igm-fore, 0.5)
 }
 
 .box-header {
@@ -136,7 +140,7 @@ $black-col         : $dark !default;
 
 .upgrade.owned,
 .achiev.owned {
-  box-shadow: $shadow-owned
+  box-shadow: $igm-shadow-owned
 }
 
 .thing.cantAfford {
@@ -149,7 +153,7 @@ $black-col         : $dark !default;
 
 .thing-costs {
   font-weight: bold;
-  text-shadow: $shadow-costs;
+  text-shadow: $igm-shadow-costs;
 }
 
 .cost.hasEnough {
@@ -185,16 +189,16 @@ $black-col         : $dark !default;
 
 .fullWidth,
 .fullWidth:hover {
-  background: rgba($black-col, 0.75);
+  background: rgba($igm-fore, 0.75);
   box-shadow: none;
-  color     : $white-col;
+  color     : $igm-back;
 }
 
 .fullWidth:before,
 .fullWidth:after {
   content   : '';
   height    : 1px;
-  background: rgba($white-col, 0.75);
+  background: rgba($igm-back, 0.75);
   position  : absolute;
   left      : 0px;
   right     : 0px;
@@ -224,7 +228,7 @@ $black-col         : $dark !default;
 }
 
 #game.filtersOn .thing-icon {
-  filter: drop-shadow(3px 3px 1px rgba($black-col, 0.5));
+  filter: drop-shadow(3px 3px 1px rgba($igm-fore, 0.5));
 }
 
 b {

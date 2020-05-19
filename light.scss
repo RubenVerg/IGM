@@ -2,7 +2,7 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
-$box-bg: $light;
-$box-bg-main: rgba($light, .25);
+$igm-box-bg-alpha     : 1;
+$igm-box-bg-main-alpha: .25;
 
 @import "root";

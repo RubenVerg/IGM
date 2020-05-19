@@ -3,8 +3,8 @@
 }
 
 #game {
-  background: #fff;
-  color: #212529;
+  background: #343a40;
+  color: #f8f9fa;
   text-shadow: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
