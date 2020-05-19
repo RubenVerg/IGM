@@ -1,0 +1,48 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "light",
+      "type": "shell",
+      "command": "sass light.scss light.txt --no-source-map"
+    },
+    {
+      "label": "dark",
+      "type": "shell",
+      "command": "sass dark.scss dark.txt --no-source-map"
+    },
+    {
+      "label": "transparent",
+      "type": "shell",
+      "command": "sass transparent.scss transparent.txt --no-source-map"
+    },
+    {
+      "label": "all",
+      "dependsOn": [
+        "light",
+        "dark",
+        "transparent"
+      ]
+    },
+    {
+      "label": "commit",
+      "type": "shell",
+      "command": "git add * && git commit -m ~ && git push"
+    },
+    {
+      "label": "Build and release",
+      "dependsOn": [
+        "all",
+        "commit"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
