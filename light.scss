@@ -1,13 +1,13 @@
 @import "root";
 
-.box {
+.box:not(#box-buttons) {
   background-color: $card-bg;
 
-  &#box-buttons {
-    background-color: rgba($card-bg, .5);
-  }
-
   &#box-main .box-things {
-    background-color: rgba(red, .25);
+    background-color: rgba(green, .25);
   }
+}
+
+.box#box-buttons {
+  background-color: rgba($card-bg, .5);
 }
