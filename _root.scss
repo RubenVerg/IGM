@@ -232,8 +232,13 @@ $igm-shadow-costs      : $igm-shadow-costs-pos rgba($igm-shadow-color, $igm-shad
     filter: drop-shadow(3px 3px 1px rgba($igm-fore, 0.5));
   }
 
-  .thing.cantAfford:not(:hover) {
-    filter: blur(2px);
+  .upgrade.cantAfford {
+    &:not(:hover) {
+    filter: blur(2px) grayscale(50%);
+    }
+    &:hover {
+      filter: grayscale(25%);
+    }
   }
 }
 
