@@ -227,8 +227,13 @@ $igm-shadow-costs      : $igm-shadow-costs-pos rgba($igm-shadow-color, $igm-shad
   font-weight: normal;
 }
 
-#game.filtersOn .thing-icon {
-  filter: drop-shadow(3px 3px 1px rgba($igm-fore, 0.5));
+#game.filtersOn {
+  .thing-icon {
+    filter: drop-shadow(3px 3px 1px rgba($igm-fore, 0.5));
+  }
+  .thing.cantAfford {
+    filter: blur(5px);
+  }
 }
 
 b {
