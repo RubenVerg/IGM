@@ -218,6 +218,6 @@ q {
   background-color: #fff;
 }
 
-.box#box-buttons {
+.box#box-buttons, .box#box-main {
   background-color: rgba(255, 255, 255, 0.25);
 }
