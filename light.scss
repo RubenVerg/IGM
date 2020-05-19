@@ -3,11 +3,11 @@
 .box:not(#box-buttons) {
   background-color: $card-bg;
 
-  &#box-main .box-things {
-    background-color: rgba(green, .25);
-  }
-}
+  &#box-main {
+    background-color: rgba($card-bg, .5);
 
-.box#box-buttons {
-  background-color: rgba($card-bg, .5);
+    .box-things {
+      background-color: rgba(aqua, .25);
+    }
+  }
 }
