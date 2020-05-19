@@ -210,7 +210,7 @@
 #game.filtersOn .thing-icon {
   filter: drop-shadow(3px 3px 1px rgba(52, 58, 64, 0.5));
 }
-#game.filtersOn .thing.cantAfford {
+#game.filtersOn .thing.cantAfford:not(:hover) {
   filter: blur(2px);
 }
 
