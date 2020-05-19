@@ -1,23 +1,40 @@
-@import "bootstrap/functions";
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+$box-bg            : rgba($light, .25) !default;
+$box-bg-main       : $box-bg !default;
+$box-bg-resources  : rgba($dark, .1) !default;
+$shadow-color      : $dark !default;
+$shadow-owned-alpha: .25 !default;
+$shadow-owned-pos  : 0px 0px 0px 2px !default;
+$shadow-costs-alpha: .5 !default;
+$shadow-costs-pos  : 1px 1px 0px !default;
+$shadow-owned      : $shadow-owned-pos rgba($shadow-color, $shadow-owned-alpha) inset !default;
+$shadow-costs      : $shadow-costs-pos rgba($shadow-color, $shadow-costs-alpha) !default;
+$white-col         : $light !default;
+$black-col         : $dark !default;
 
 :root {
   @include font-size(12px);
 }
 
 #game {
-  background: $body-bg;
+  background : $body-bg;
   color      : $body-color;
   text-shadow: none;
   font-family: $font-family-base;
 }
 
 .box {
-  text-align: center;
-  padding   : 0px;
-  box-shadow: none;
-  background-color: rgba($card-bg, 0.25);
+  text-align      : center;
+  padding         : 0px;
+  box-shadow      : none;
+  background-color: $box-bg;
+
+  &#box-main {
+    background-color: $box-bg-main;
+
+    .box-things {
+      background-color: $box-bg-resources;
+    }
+  }
 }
 
 .thing,
@@ -31,7 +48,7 @@
 }
 
 .thing:hover {
-  background: rgba($black, 0.5)
+  background: rgba($black-col, 0.5)
 }
 
 .box-header {
@@ -119,7 +136,7 @@
 
 .upgrade.owned,
 .achiev.owned {
-  box-shadow: 0px 0px 0px 2px rgba($black, 0.5) inset;
+  box-shadow: $shadow-owned
 }
 
 .thing.cantAfford {
@@ -132,7 +149,7 @@
 
 .thing-costs {
   font-weight: bold;
-  text-shadow: 1px 1px 0px rgba($black, 0.5);
+  text-shadow: $shadow-costs;
 }
 
 .cost.hasEnough {
@@ -168,16 +185,16 @@
 
 .fullWidth,
 .fullWidth:hover {
-  background: rgba($black, 0.75);
+  background: rgba($black-col, 0.75);
   box-shadow: none;
-  color     : $white;
+  color     : $white-col;
 }
 
 .fullWidth:before,
 .fullWidth:after {
   content   : '';
   height    : 1px;
-  background: rgba($white, 0.75);
+  background: rgba($white-col, 0.75);
   position  : absolute;
   left      : 0px;
   right     : 0px;
@@ -207,7 +224,7 @@
 }
 
 #game.filtersOn .thing-icon {
-  filter: drop-shadow(3px 3px 1px rgba($black, 0.5));
+  filter: drop-shadow(3px 3px 1px rgba($black-col, 0.5));
 }
 
 b {

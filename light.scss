@@ -1,13 +1,8 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$box-bg: $light;
+$box-bg-main: rgba($light, .25);
+
 @import "root";
-
-.box:not(#box-buttons) {
-  background-color: $card-bg;
-
-  &#box-main {
-    background-color: rgba($card-bg, .5);
-
-    .box-things {
-      background-color: rgba(aqua, .25);
-    }
-  }
-}

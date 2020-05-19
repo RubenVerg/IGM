@@ -1,0 +1,12 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$box-bg: $dark;
+$box-bg-main: rgba($dark, .25);
+$box-bg-resources: rgba($light, .1);
+$shadow-color: $light;
+$white-col: $dark;
+$black-col: $light;
+
+@import "root";
