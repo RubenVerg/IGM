@@ -9,16 +9,16 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.box {
+.box:not(#box-buttons) {
   text-align: center;
   padding: 0px;
   box-shadow: none;
   background-color: #343a40;
 }
-.box#box-main {
+.box:not(#box-buttons)#box-main {
   background-color: rgba(52, 58, 64, 0.25);
 }
-.box#box-main .box-things {
+.box:not(#box-buttons)#box-main .box-things {
   background-color: rgba(248, 249, 250, 0.1);
 }
 

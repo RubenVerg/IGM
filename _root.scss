@@ -22,7 +22,7 @@ $black-col         : $dark !default;
   font-family: $font-family-base;
 }
 
-.box {
+.box:not(#box-buttons) {
   text-align      : center;
   padding         : 0px;
   box-shadow      : none;
