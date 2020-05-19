@@ -9,7 +9,7 @@ $img-box-bg-main       : rgba($igm-box-bg-main-col, $igm-box-bg-main-alpha) !def
 $igm-box-bg-resources  : rgba($igm-fore, .1) !default;
 $igm-shadow-color      : $igm-fore !default;
 $igm-shadow-owned-alpha: .25 !default;
-$igm-shadow-owned-pos  : 0px 0px 0px 2px !default;
+$igm-shadow-owned-pos  : 0px 0px 10px 5px !default;
 $igm-shadow-costs-alpha: .5 !default;
 $igm-shadow-costs-pos  : 1px 1px 0px !default;
 $igm-shadow-owned      : $igm-shadow-owned-pos rgba($igm-shadow-color, $igm-shadow-owned-alpha) inset !default;
