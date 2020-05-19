@@ -24,7 +24,7 @@ Buttons
 				on click:anim icon wobble
 				on click:yield 1 pizza
 				on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
-				icon:stuff/pizza.png
+				icon:stuff/bunny.png
 				no text
 				class:bigButton hasFlares
 				icon class:shadowed
