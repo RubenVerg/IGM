@@ -219,5 +219,9 @@ q {
 }
 
 .box#box-buttons, .box#box-main {
-  background-color: greenyellow;
+  background-color: rgba(173, 255, 47, 0.1);
+}
+
+.box-things {
+  background-color: rgba(0, 0, 0, 0.5);
 }

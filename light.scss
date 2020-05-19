@@ -6,5 +6,9 @@
 
 .box#box-buttons, .box#box-main {
   // background-color: rgba($card-bg, 0.25);
-  background-color: greenyellow;
+  background-color: rgba(greenyellow, .1);
+}
+
+.box-things {
+  background-color: rgba($black, 0.5)
 }
