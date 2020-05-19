@@ -1,0 +1,9 @@
+@import "root";
+
+.box {
+  background-color: $card-bg
+}
+
+.box#box-buttons {
+  background-color: rgba($card-bg, 0.25);
+}
