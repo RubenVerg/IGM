@@ -169,9 +169,9 @@
 
 .fullWidth,
 .fullWidth:hover {
-  background: rgba(248, 249, 250, 0.75);
+  background: rgba(52, 58, 64, 0.75);
   box-shadow: none;
-  color: #343a40;
+  color: #f8f9fa;
 }
 
 .fullWidth:before,

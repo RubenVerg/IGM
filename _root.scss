@@ -189,9 +189,9 @@ $igm-shadow-costs      : $igm-shadow-costs-pos rgba($igm-shadow-color, $igm-shad
 
 .fullWidth,
 .fullWidth:hover {
-  background: rgba($igm-fore, 0.75);
+  background: rgba($igm-back, 0.75);
   box-shadow: none;
-  color     : $igm-back;
+  color     : $igm-fore;
 }
 
 .fullWidth:before,
